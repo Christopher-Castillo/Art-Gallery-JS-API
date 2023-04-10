@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js"></script>
+    <title>Chicago Art Gallery API</title>
+  </head>
+  <body>
+    <!-- Page title -->
+    <h1 class="page-title">Chicago Art Gallery Portraits</h1>
+
+    <div id="home">
+      <!-- HOME CONTENTS -->
+
+      <div id="home-contents">
+        <!-- IMAGE -->
+        <div class="swiper-slide">
+          <div class="img-container">
+            <figure
+              class="gallery__item gallery__item--1"
+              artwork_id="40619"
+              onclick="clickedEvent(this.getAttribute('artwork_id'))"
+            >
+              <img src="images/Zapata.jpg" alt="Zapata" />
+            </figure>
+          </div>
+        </div>
+        <!-- IMAGE -->
+
+        <!-- IMAGE -->
+        <div class="swiper-slide">
+          <div class="img-container">
+            <figure
+              class="gallery__item gallery__item--2"
+              artwork_id="28067"
+              onclick="clickedEvent(this.getAttribute('artwork_id'))"
+            >
+              <img src="images/The Old Guitarist.jpg" alt="The Old Guitarist" />
+            </figure>
+          </div>
+        </div>
+        <!-- IMAGE -->
+
+        <!-- IMAGE -->
+        <div class="swiper-slide">
+          <div class="img-container">
+            <figure
+              class="gallery__item gallery__item--3"
+              artwork_id="6565"
+              onclick="clickedEvent(this.getAttribute('artwork_id'))"
+            >
+              <img src="Images/American Gothic.jpg" alt="American Gothic" />
+            </figure>
+          </div>
+        </div>
+        <!-- IMAGE -->
+
+        <!-- IMAGE -->
+        <div class="swiper-slide">
+          <div class="img-container">
+            <figure
+              class="gallery__item gallery__item--4"
+              artwork_id="80607"
+              onclick="clickedEvent(this.getAttribute('artwork_id'))"
+            >
+              <img src="images/Self-Potrait.jpg" alt="Van Gogh Self-Portrait" />
+            </figure>
+          </div>
+        </div>
+        <!-- IMAGE -->
+      </div>
+    </div>
+
+<!-- ARTWORK MODAL -->
+<div id="modal-container" class="modal-container">
+    <div class="modal-content">
+      <h2 id="art-title"></h2>
+      <p id="date-info"></p>
+      <p id="artist-info"></p>
+      <span class="close-button" onclick="closeModal()">X</span>
+    </div>
+  </div>
+  
